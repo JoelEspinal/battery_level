@@ -16,7 +16,7 @@ import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugins.GeneratedPluginRegistrant;
 
 public class MainActivity extends FlutterActivity {
-    private static final String CHANNEL = "'course.flutter.dev/battery'";
+    private static final String CHANNEL = "course.flutter.dev/battery";
 
     @Override
     public void configureFlutterEngine(@NonNull FlutterEngine flutterEngine) {
