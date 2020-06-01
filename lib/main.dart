@@ -26,6 +26,12 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _bateryLevel;
 
+  @override
+  void initState() {
+    _getBatteryLevel();
+    super.initState();
+  }
+
   Future<void> _getBatteryLevel() async {
     const platform = MethodChannel('course.flutter.dev/battery');
     try {
